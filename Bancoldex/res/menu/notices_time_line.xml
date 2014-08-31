@@ -8,5 +8,12 @@
         android:showAsAction="always"
         android:icon="@drawable/abc_ic_clear_search_api_holo_light"
         android:title="@string/action_settings"/>
+    
+    <item 
+        android:id="@+id/solutions"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:icon="@drawable/abc_ic_clear"
+        android:title="Soluciones"/>
 
 </menu>

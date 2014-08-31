@@ -6,6 +6,8 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 import com.reyesmagos.bancoldex.bancoldexapp.R;
 import com.reyesmagos.bancoldex.bancoldexapp.controlador.FacadeController;
+import com.reyesmagos.bancoldex.bancoldexapp.opentok.UIActivity;
+
 import android.app.Activity;
 import android.app.ActionBar;
 import android.content.Intent;
@@ -54,8 +56,12 @@ public class LoginActivityMain extends Activity {
 //				editTextPassword.getText().toString());
 //			Intent i = new Intent(this,GenerateQRCodeActivity.class);
 //			startActivity(i);
-		Intent i = new Intent(this,NoticesTimeLineActivity.class);
-		startActivity(i);
+
+        Intent intent = new Intent(LoginActivityMain.this, UIActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+
 	}
 
 	public void SingUp(View v) {

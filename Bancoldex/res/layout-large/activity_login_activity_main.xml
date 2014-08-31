@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textview_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/username_label" 
+            android:textSize="25dp"
+            android:layout_marginTop="380dp"/>
+
+        <EditText
+            android:id="@+id/edittext_username1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="ana_giraldo_Bancolombia"
+            android:layout_marginTop="380dp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textview_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/password_label"
+            android:textColor="#000000" 
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edittext_password1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:text="bancolombia" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageview_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnLogin_Click"
+            android:src="@drawable/ic_launcher" 
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/imageview_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="SingUp2"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -4,15 +4,21 @@ import com.reyesmagos.bancoldex.bancoldexapp.R;
 import com.reyesmagos.bancoldex.bancoldexapp.R.id;
 import com.reyesmagos.bancoldex.bancoldexapp.R.layout;
 import com.reyesmagos.bancoldex.bancoldexapp.R.menu;
+import com.reyesmagos.bancoldex.bancoldexapp.activities.solution.SolutionActivity;
 import com.reyesmagos.bancoldex.bancoldexapp.controlador.FacadeController;
 import com.reyesmagos.bancoldex.bancoldexapp.modelo.BusinessManUser;
 import com.reyesmagos.bancoldex.bancoldexapp.modelo.IntermediaryAgent;
 
 import android.app.Activity;
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -46,26 +52,14 @@ public class NoticesTimeLineActivity extends Activity {
 		}
 
 	}
-	
-	
-
-
-
 
 	public ActionBar getAction() {
 		return action;
 	}
 
-
-
-
-
-
 	public void setActionBar(ActionBar actionBar) {
 		this.action = actionBar;
 	}
-
-
 
 	public void init() {
 		listviewNotices = (ListView) findViewById(R.id.listView_notices);
@@ -107,8 +101,43 @@ public class NoticesTimeLineActivity extends Activity {
 						.showFiltersForIntermediaryAgent(intermediaryAgent);
 			}
 			return true;
+		} else if (id == R.id.solutions) {
+			startActivity(new Intent(this, SolutionActivity.class));
+
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+			alertDialog
+					.setMessage(
+							"¿Esta seguro que desea salir de la aplicación?")
+					.setTitle("Alerta").setCancelable(false);
+			alertDialog.setPositiveButton("Salir", new OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					System.exit(1);
+
+				}
+			});
+			alertDialog.setNegativeButton("Cancelar", new OnClickListener() {
+
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+
+				}
+			});
+
+			AlertDialog alertDialog2 = alertDialog.create();
+
+			alertDialog2.show();
+		}
+
+		return super.onKeyDown(keyCode, event);
 	}
 
 }
