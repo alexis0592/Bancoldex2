@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reyesmagos.bancoldex.bancoldexapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.example.tabss.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAuTnCuLHZjh86Y704uRPO6Bg0X1sxhuGQ" />
+
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.activities.LoginActivityMain"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.activities.NoticesTimeLineActivity"
+            android:label="@string/title_activity_notices_time_line" >
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.activities.PerfilActivity"
+            android:label="Perfil" >
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.activities.GenerateQRCodeActivity"
+            android:label="GenerarQR" >
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.activities.ReadQrCodeActivity"
+            android:label="RedQR" >
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.activities.FragmentoMapa"
+            android:label="Fragmentomapa" >
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.Mapa"
+            android:label="Mapa" >
+        </activity>
+        <activity
+            android:name="com.reyesmagos.bancoldex.bancoldexapp.MainActivity"
+            android:label="Main" >
+        </activity>
+        <activity
+            android:name=".activities.register.NeedSelectorActivity"
+            android:label="@string/need_selector_activity_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.solution.SolutionActivity"
+            android:label="@string/title_activity_solution"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.detail.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

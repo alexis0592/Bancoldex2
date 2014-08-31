@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bancoldex</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- controller -->
+    <string name="ok_label">Ok</string>
+
+    <!-- login -->
+    <string name="username_label">username</string>
+    <string name="password_label">password</string>
+
+    <!-- Register activity -->
+    <string name="register_activity">Registrar</string>
+    <string name="rol_textview_name">Rol: </string>
+    <string name="company_name_text">Nombre: </string>
+    <string name="nit_number_text">NIT</string>
+    <string name="sector_name_text">Sector</string>
+    <string name="sector_selector_text">Sector</string>
+    <string name="subsector_text">Subsector</string>
+    <string name="location_text">Ubicación</string>
+    <string name="department_activity">Departamento</string>
+    <string name="municipality_text">Municipio</string>
+    <string name="password_text">Contraseña</string>
+    <string name="composition_name_text">Socios</string>
+
+    <!-- Selector activity -->
+    <string name="selector_activity_name">Sector</string>
+
+    <!-- Need selector activity -->
+    <string name="need_selector_activity_name">Necesidades</string>
+
+    <string-array name="sector_array">
+        <item>Comercio</item>
+        <item>Salud</item>
+        <item>Industria manufacturera</item>
+        <item>Información y comunicaciones</item>
+        <item>Servicios de apoyo </item>
+        <item>Transporte</item>
+        <item>Inmobiliarias</item>
+        <item>Agroindustria</item>
+        <item>Tecnología</item>
+        <item>Turismo</item>
+        <item>Otros servicios</item>
+    </string-array>
+    <string-array name="subsector_array">
+        <item>Informal</item>
+        <item>Formal</item>
+        <item>textil</item>
+    </string-array>
+    <string-array name="rol_array">
+        <item>Empresario Nacional</item>
+        <item>Empresario Extranjero</item>
+        <item>Emprendedor</item>
+        <item>Intermediario</item>
+    </string-array>
+
+    <string name="neccesity_text">Necesidades</string>
+    <string name="user_name_text">Nombre de usuario</string>
+    <string name="title_activity_notices_time_line">NoticesTimeLineActivity</string>
+
+    <!-- Solution Activity -->
+    <string name="title_activity_solution">Soluciones</string>
+    <string name="plazo_max_text">"Plazo máximo: "</string>
+    <string name="plazo_minimo_text">"Plazo mínimo: "</string>
+    <string name="periodo_gracia_text">"Periodo de gracia: "</string>
+    <string name="valor_monto_max_text">"Valor monto máxmo: "</string>
+    <string name="tasa_max_cliente">Tasa máxima cliente</string>
+
+    <!-- Detail Activity -->
+    <string name="title_activity_detail">Detalle de producto</string>
+
+</resources>

@@ -1,0 +1,7 @@
+*.classpath
+Bancoldex/bin/
+*.prefs
+*.project
+*.class
+*.cache
+*.apk

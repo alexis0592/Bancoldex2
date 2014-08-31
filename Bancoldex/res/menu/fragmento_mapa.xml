@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.reyesmagos.bancoldex.bancoldexapp.FragmentoMapa" >
+
+       <item
+        android:id="@+id/streetView"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="ifRoom"
+        android:title="streetview"/>
+
+</menu>
